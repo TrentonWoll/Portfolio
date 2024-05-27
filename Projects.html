@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Projects.css">
+    <style>
+        .card {
+            height: 100%;
+            border: 2px solid black; /* Add black border to the cards */
+        }
+        .card-img-top {
+            height: 200px; /* Set the height for all thumbnails */
+            object-fit: cover;
+        }
+        .card-body {
+            height: 100%;
+            background-color: white;;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="CodeHeader.png" alt="Projects Header">
+    <h1>Projects</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="Index.html">Terminal</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Goals.html">Goals</a></li>
+    </ul>
+</nav>
+<div class="container mt-5">
+    <p>Check out some of my projects below:</p>
+    <div class="row">
+        <!-- Java Snake Game Card -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="SnakeThumbNail.png" class="card-img-top" alt="Java Snake Game Thumbnail">
+                <div class="card-body">
+                    <h5 class="card-title">Java Snake Game</h5>
+                    <p class="card-text">A classic Snake game built with Java.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#snakeGameModal">
+                        View Project
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Pi Project Card -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="PiProjectThumbnail.PNG" class="card-img-top" alt="Pi Project Thumbnail">
+                <div class="card-body">
+                    <h5 class="card-title">Pi Project</h5>
+                    <p class="card-text">A project using a Raspberry Pi to erase all contents on a USB flashdrive.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#piProjectModal">
+                        View Project
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Website About AI Card -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="AIWebsiteThumbnail.png" class="card-img-top" alt="Website About AI Thumbnail">
+                <div class="card-body">
+                    <h5 class="card-title">Website About AI</h5>
+                    <p class="card-text">A website providing information about AI.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aiWebsiteModal">
+                        View Project
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Java Snake Game Modal -->
+<div class="modal fade" id="snakeGameModal" tabindex="-1" role="dialog" aria-labelledby="snakeGameModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="snakeGameModalLabel">Java Snake Game</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>A classic Snake game built with Java.</p>
+                <iframe width="100%" height="750" src="https://www.youtube.com/embed/CLsQF8n8IqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br><br>
+                <a href="https://github.com/TrentonWoll/JavaSnakeGame" class="btn btn-dark" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pi Project Modal -->
+<div class="modal fade" id="piProjectModal" tabindex="-1" role="dialog" aria-labelledby="piProjectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="piProjectModalLabel">Pi Project</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>A project using a Raspberry Pi to erase all contents on a USB flashdrive.</p>
+                <iframe width="100%" height="750" src="https://www.youtube.com/embed/w46bKGP3dMg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br><br>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Website About AI Modal -->
+<div class="modal fade" id="aiWebsiteModal" tabindex="-1" role="dialog" aria-labelledby="aiWebsiteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="aiWebsiteModalLabel">Website About AI</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>A website providing information about AI.</p>
+                <iframe width="100%" height="750" src="https://www.youtube.com/embed/zNmKZY452t8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br><br>
+                <a href="https://github.com/TrentonWoll/Website-About-AI" class="btn btn-dark" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
